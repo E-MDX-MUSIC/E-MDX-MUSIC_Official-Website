@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Links',monospace;
+    src: url(fonts/Elektra.woff), format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+h1, p {
+  font-family: 'Links', monospace;
+}
+
+h1 {
+  font-family: 'Links', monospace;
+  font-weight: 700;
+  font-style: italic;
+}
