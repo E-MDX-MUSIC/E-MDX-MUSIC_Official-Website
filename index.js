@@ -74,6 +74,7 @@ var firebaseConfig = {
       database_ref.child('users/' + user.uid).update(user_data)
   
       alert('User Logged In!!')
+      window.location.assign("home.html")
   
     })
     .catch(function(error) {

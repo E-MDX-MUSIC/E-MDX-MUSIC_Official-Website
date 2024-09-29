@@ -1,79 +1,47 @@
 <!DOCTYPE html>
 <html>
     <style>
-        img{
-            width: auto;
-            height: 1050px;
-            object-fit: cover;
-        }
-        .img2{
-            max-width: 100%;
-            height: auto;
-        }
         div{
             margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-                height: 100vh;
+                height: 20vh;
         }
         a {color: azure;}
     </style>
     <head>
-        <title>E-MDX-MUSIC</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>CSS @font-face</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body style="background-color: black;" text="azure">
+        <h1>E-MDX-MUSIC</h1>
         <div>
-            <img src="images/E-MDX_LOGO(NEW).png">
+            <img src="images/E-MDX_LOGO(120x120).png">
         </div>
-        <img src="images/E-MDX - Bio(Full).png" class="img2">
-        <h1>Links:</h1>
-        <script src="https://apis.google.com/js/platform.js"></script>
+        <div id="content_container"></div>
+        <div id="form_container">
+            <div id="form_header_container">
+                <h2 id="form_header"> Login & Register:    </h2>
+            </div>
 
-        <div class="g-ytsubscribe" data-channelid="UC7dePYWExAjHe20EnPmrRvg" data-layout="full" data-theme="default" data-count="default"></div>
-        <p>@E-MDX</p>
-        <p> </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GzdR6SvxPWk?si=w3KU1kbcAWOd4rao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p> </p>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5abtOfV1lSRbdEMupmskX5?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <p> </p>
-        <a href="https://space.bilibili.com/1965887430?spm_id_from=333.1007.0.0" target=_blank>
-            哔哩哔哩个人主页
-        </a>
-        <p> </p>
-        <a href="https://pan.baidu.com/s/1f5gVvuo4-VqdWoB9Fza9bQ?pwd=rz3m" target=_blank title="rz3m">
-            Heart Ocean in Deep Dream Pads - An Atmospheric Dreamy Sounding Kontakt Sample Library by E-MDX 百度网盘
-        </a>
-        <div id="content_container">
-            <div id="form_container">
-                <div id="form_header_container">
-                    <h2 id="form_header"> Login & Register:    </h2>
-                </div>
+            <div id="form_content_container">
+                <div id="form_content_inner_container">
+                    <input type="text" id="full_name" placeholder="Full name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
 
-                <div id="form_content_container">
-                    <div id="form_content_inner_container">
-                        <input type="text" id="full_name" placeholder="Full name">
-                        <input type="email" id="email" placeholder="Email">
-                        <input type="password" id="password" placeholder="Password">
+                    <input type="text" id="favourite_song" placeholder="Favourite Movies">
+                    <input type="text" id="milk_before_cereal" placeholder="Favourite genre of music">
 
-                        <input type="text" id="favourite_song" placeholder="Favourite Movies">
-                        <input type="text" id="milk_before_cereal" placeholder="Favourite genre of music">
-
-                        <div id="button_container">
-                            <button onclick="login()">Login</button>
-                            <button onclick="register()">Register</button>
-                        </div>
-
+                    <div id="button_container">
+                        <button onclick="login()">Login</button>
+                        <button onclick="register()">Register</button>
                     </div>
                 </div>
             </div>
         </div>
-        <p>Official Website of the Composer/Producer E-MDX</p>
+    </div>
     </body>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
@@ -81,5 +49,4 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
     <script src="index.js"></script>
-      
 </html>
