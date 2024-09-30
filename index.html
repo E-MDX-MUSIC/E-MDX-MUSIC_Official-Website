@@ -12,6 +12,7 @@
     </style>
     <head>
         <title>Login Menu</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
         <link rel="stylesheet" href="style.css">
     </head>
     <body style="background-color: black;" text="azure">
@@ -27,12 +28,13 @@
         <div>
             <img src="images/E-MDX_LOGO(120x120).png">
         </div>
-        <div id="content_container"></div>
+        <div id="content_container">
+            <h1> </h1>
+        </div>
+        <div id="content_container2">
+            <h1> </h1>
+        </div>
         <div id="form_container">
-            <div id="form_header_container">
-                <h2 id="form_header"> Login & Register:    </h2>
-            </div>
-
             <div id="form_content_container">
                 <div id="form_content_inner_container">
                     <input type="text" id="full_name" placeholder="Full name">
@@ -49,7 +51,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </body>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
