@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
     <style>
-        img{
-            width: auto;
-            max-height: 875px;
-            object-fit: cover;
+        .img-fluid{
+            width: 30%;
+            height: 30%;
+            background-image: url('images/E-MDX_LOGO(NEW).png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            animation: fade-in 1000ms ease-in-out;
         }
-        div{
-            margin: auto;
+        header{
+            min-height: 500px;
+            width: 100%;
+        }
+        .navbar{
+            position: relative;
+            width: 100%;
+        }
+        .responsive{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            max-height: 100vh;
+            min-width: 1200px;
         }
         a {color: azure;}
     </style>
     <head>
         <title>E-MDX-MUSIC</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="google-signin-client_id" content="928550254908-u6t8jtcro9k21jc1ia61epigd29oranc.apps.googleusercontent.com">
         <title>Dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body style="background-color: black;" text="azure">

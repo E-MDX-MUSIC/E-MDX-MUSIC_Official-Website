@@ -1,21 +1,16 @@
-@font-face {
-    font-family: 'Links',monospace;
-    src: url(fonts/Elektra.woff), format('woff');
-    font-weight: 700;
-    font-style: italic;
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
 }
-* {
-    box-sizing: border-box;
-}
-
-h1, p {
-  font-family: 'Links', monospace;
-}
-
-h1 {
-  font-family: 'Links', monospace;
-  font-weight: 700;
-  font-style: italic;
+html,header{
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0px 0px 10px #0058cb, 0px 0px 20px #fff;
 }
 .container {
     display: flex;
@@ -39,6 +34,15 @@ h1 {
     }
     .responsive{
         padding: 0px 20px;
+    }
+    .left-column{
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .active,.product-description{
+      font-size: 5px;
+      float: none;
+      width: 100%;
     }
 }
 html{
@@ -310,7 +314,92 @@ button:focus {
   .mobile-menu li {
     margin-bottom: 10px;
   }
-.img-fluid{
-    width: 40.5%;
-    height: auto;
+  .player{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+  .rack{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: fade-in 1000ms ease-in-out;
+  }
+  .h1imgtext{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
+  .rack2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: fade-in 1500ms ease-in-out;
+  }
+  .info{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+  }
+  .active {
+    background-image:url(images/Heart\ Ocean\ in\ Deep\ Dream\ Toolkit\ by\ E-MDX_Screen\ Shot_v0.2.png);
+    display: grid;
+    float: left;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  .product-description{
+    text-align: center;
+    padding: 20px;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  .img1text{
+    animation: fade-in 500ms ease-in-out;
+  }
