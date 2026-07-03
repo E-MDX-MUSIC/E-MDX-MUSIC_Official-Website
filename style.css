@@ -353,6 +353,19 @@ button:focus {
     width: 50%;
     animation: fade-in 2000ms ease-in-out;
   }
+  .rack4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: fade-in 2500ms ease-in-out;
+  }
+  .rack5{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
   .info{
     max-width: 1200px;
     margin: 0 auto;
